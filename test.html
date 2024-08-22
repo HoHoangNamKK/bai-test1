@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CNN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="icons-1.11.3/font/bootstrap-icons.css">
+        <script>
+            $(document).ready(function() {
+                function checkNavbarOverflow() {
+                    const $navItems = $('#navbarItems');
+                    const $dropdown = $('#moreDropdown');
+                    const $dropdownMenu = $('#dropdownMenu');
+        
+                    // Reset before check
+                    $dropdownMenu.empty();
+                    $dropdown.addClass('d-none');
+                    $navItems.children('.nav-item').removeClass('d-none');
+                    
+                    let navWidth = $navItems.outerWidth();
+                    let availableWidth = $('#navbarNav').outerWidth();
+                    
+                    // Check for overflow and move items to dropdown if necessary
+                    while (navWidth > availableWidth) {
+                        const $lastItem = $navItems.children('.nav-item').last();
+                        $lastItem.addClass('d-none');
+                        $lastItem.prependTo($dropdownMenu);
+                        navWidth -= $lastItem.outerWidth();
+                    }
+        
+                    // Show dropdown if items moved
+                    if ($dropdownMenu.children().length > 0) {
+                        $dropdown.removeClass('d-none');
+                    }
+                    
+                    // Move items back from dropdown to navbar if there's enough space
+                    while (navWidth <= availableWidth && $dropdownMenu.children().length > 0) {
+                        const $firstDropdownItem = $dropdownMenu.children().first();
+                        $firstDropdownItem.removeClass('d-none').appendTo($navItems);
+                        navWidth += $firstDropdownItem.outerWidth();
+                    }
+                }
+        
+                checkNavbarOverflow();  // Initial check
+        
+                // Recheck on window resize
+                $(window).resize(function() {
+                    checkNavbarOverflow();
+                });
+            });
+        </script>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="width: 200px;" id="navbarNav">
+              <ul class="navbar-nav" id="navbarItems">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown d-none" id="moreDropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdownMenu">
+                    <!-- Items will be dynamically added here -->
+                     <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li><li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Services</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link dropdown-item d-none" href="#">Contact</a>
+                          </li>
+                     </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="height: 40px;width: 40px;">
+                <button class="nav-link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+             </li>
+
+             <li class="nav-item" style="height: 40px;width: 40px;">
+                <a href="#" class="nav-link"><img class="img-fluid" src="img/icon-cnn.png" alt="..."></a>
+             </li>
+        </ul>
+
+        
+
+        <!-- <div class="collapse navbar-collapse bg-dark d-flex z-3"  id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">World</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Politics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Opinion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Entertainment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Style</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Travel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Sports</a>
+                </li>
+                
+                <li class="nav-item dropdown d-none d-lg-block" id="moreDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      More
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Science</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Climate</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Weather</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Ukraine-Russia War</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Israel-Hamas War</a>
+                        </li>
+                        <li class="nav-item dropdown-item">
+                            <a class="nav-link text-white" href="#">Paris Olympics</a>
+                        </li>
+                      </ul>
+                  </li>
+                </ul>
+              </li>
+              
+            </ul>
+        
+    <div class="col">
+        <div class=nav-phai">
+            <div class="nav-phai-3">
+                <a class="nav-link text-white p-0" href="#" tabindex="-1" aria-disabled="true">
+                    <button type="button" class="nut-dn text-center border-1 border-white d-flex justify-content-center align-items-center" style="height: 32px;">Sign In</button>
+                </a>
+            </div>
+        </div> -->
+
+
+
+
+
+    </body>
+</html>

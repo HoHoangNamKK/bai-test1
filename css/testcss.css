@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+}
+
+.link-group {
+    white-space: nowrap;
+}
+
+.link {
+    text-decoration: none;
+    color: gray;
+    padding: 0 10px;
+}
+
+.link::after {
+    content: '|';
+    margin-left: 10px;
+    color: gray;
+}
+
+.link:last-child::after {
+    content: '';
+    /* Bỏ dấu gạch đứng sau liên kết cuối cùng */
+}
+
+.thanh-dieu-huong {
+    height: 40px;
+}
+
+.dong-chudau {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowap;
+}
+
+.dong-chudau a {
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+}
+
+.dong-chu:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 3px;
+}
+
+
+
+.tin1 a {
+    text-decoration: none;
+}
+
+.tin1 .card-box, .tin1 img {
+    border-radius: 0;
+}
+
+.tieude-tin1 {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tieude-nho{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.hinh-tg{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.hinh{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hinh-nen{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(3, 3, 3, 0.788);
+}
+
+.ten-tg-anh{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
