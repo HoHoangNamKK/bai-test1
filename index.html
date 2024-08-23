@@ -19,8 +19,8 @@
 <body>
 
     <!-- navbar -->
-    <nav class="thanh-dieu-huong navbar navbar-expand-lg navbar-dark bg-dark text-center p-0">
-        <div class="container">
+    <nav class="thanh-dieu-huong navbar navbar-expand-lg navbar-dark bg-dark text-center p-0 sticky-top" >
+        <div class="container-fluid d-lg-flex d-none" style="padding:0px 57px;">
 
             <div class="d-flex">
                 <!-- <div class="navbar-toggler me-2 border-0 d-none" type="button" data-bs-toggle="collapse"
@@ -29,7 +29,7 @@
                     <i class="bi bi-list" style="font-size: 25px;"></i>
                 </div> -->
 
-                <div class="nav-item bg-dark me-2 d-flex " style="height: 40px; width:40px;">
+                <div class="nav-item bg-dark  d-flex " style="height: 40px; width:40px;">
                     <button class="bg-dark text-white nav-link" type="button" data-bs-toggle="collapse"
                         data-bs-target="#manhinhnho" aria-controls="manhinhnho" aria-expanded="false"
                         aria-label="Toggle navigation" onclick="toggleIcon_collapse(this)">
@@ -43,24 +43,6 @@
 
             </div>
 
-            <div class="d-flex navbar-nav d-flex d-lg-none">
-                <div class="nav-phai-1  d-flex">
-                    <div class="nav-item d-sm-flex d-none"><a class="nav-link text-white me-3 me-lg-0" href="#"
-                            tabindex="-1" aria-disabled="true">Watch</a></div>
-                    <div class="nav-item d-sm-flex d-none"><a class="nav-link text-white me-3 me-lg-0" href="#"
-                            tabindex="-1" aria-disabled="true">Listen</a></div>
-                    <div class="nav-item d-sm-flex "><a class="nav-link text-white me-3 me-lg-0" href="#" tabindex="-1"
-                            aria-disabled="true">Live TV</a></div>
-                    <div class="nav-item d-sm-flex d-none">
-                        <a class="nav-link text-white " href="#" tabindex="-1" aria-disabled="true">
-                            <button type="button"
-                                class="nut-dn text-center border-1 border-white d-flex justify-content-center align-items-center">Sign
-                                In</button>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
 
             <div class="collapse  navbar-collapse me-auto mb-2 mb-lg-0" tabindex="-1" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
@@ -95,53 +77,53 @@
                         <a class="nav-link text-white me-2" href="#">Sports</a>
                     </li>
 
-                    <li class="nav-item d-none d-lg-flex dropdown">
-                        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
+                    <li class="nav-item d-none d-lg-flex menu-dropdown-nav">
+                        <a class="d-flex position-relative nav-link text-white " href="#">
+                            More <i class="fa-solid fa-angle-down" style="padding-top: 3px;padding-left:10px;"></i>
                         </a>
-                        <ul class="dropdown-menu bg-dark rounded-0 m-0  p-0 "
-                            aria-labelledby="navbarDropdown">
+                        <div class="d-flex position-absolute items-dropdown-nav">
+                            <ul class=" bg-dark rounded-0 m-0  p-0 " style="list-style:none;">
 
-                            <li class="nav-item dropdown-item" id="smenu-1">
-                                <a class="nav-link text-white" href="#">Opinion</a>
-                            </li>
-                            <li class="nav-item dropdown-item" id="smenu-2">
-                                <a class="nav-link text-white" href="#">Health</a>
-                            </li>
-                            <li class="nav-item dropdown-item" id="smenu-3">
-                                <a class="nav-link text-white" href="#">Entertainment</a>
-                            </li>
-                            <li class="nav-item dropdown-item" id="smenu-4">
-                                <a class="nav-link text-white" href="#">Style</a>
-                            </li>
-                            <li class="nav-item dropdown-item" id="smenu-5">
-                                <a class="nav-link text-white" href="#">Travel</a>
-                            </li>
+                                <li class="nav-item" id="smenu-1">
+                                    <a class="nav-link text-white" href="#">Opinion</a>
+                                </li>
+                                <li class="nav-item" id="smenu-2">
+                                    <a class="nav-link text-white" href="#">Health</a>
+                                </li>
+                                <li class="nav-item" id="smenu-3">
+                                    <a class="nav-link text-white" href="#">Entertainment</a>
+                                </li>
+                                <li class="nav-item" id="smenu-4">
+                                    <a class="nav-link text-white" href="#">Style</a>
+                                </li>
+                                <li class="nav-item" id="smenu-5">
+                                    <a class="nav-link text-white" href="#">Travel</a>
+                                </li>
 
-                            <li class="nav-item dropdown-item" id="smenu-6">
-                                <a class="nav-link text-white" href="#">Sports</a>
-                            </li>
+                                <li class="nav-item" id="smenu-6">
+                                    <a class="nav-link text-white" href="#">Sports</a>
+                                </li>
 
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white " href="#">Science</a>
-                            </li>
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white" href="#">Climate</a>
-                            </li>
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white" href="#">Weather</a>
-                            </li>
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white" href="#">Ukraine-Russia War</a>
-                            </li>
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white" href="#">Israel-Hamas War</a>
-                            </li>
-                            <li class="nav-item dropdown-item">
-                                <a class="nav-link text-white" href="#">Paris Olympics</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white " href="#">Science</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Climate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Weather</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Ukraine-Russia War</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Israel-Hamas War</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Paris Olympics</a>
+                                </li>
                         </ul>
+                        </div>
                     </li>
                 </ul>
 
@@ -157,7 +139,45 @@
                             aria-disabled="true">Live TV</a></div>
                     <div class="nav-item"><a class="nav-link text-white me-3 me-lg-0" href="#" tabindex="-1"
                             aria-disabled="true"><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                    <div class="nav-item">
+                    <div class="nav-item" >
+                        <a class="nav-link text-white " style="padding-right:0;" href="#" tabindex="-1" aria-disabled="true">
+                            <button type="button"
+                                class="nut-dn text-center border-1 border-white d-flex justify-content-center">Sign
+                                In</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid d-flex d-lg-none" style="padding:0px 16px;">
+
+            <div class="d-flex">
+
+                <div class="nav-item bg-dark  d-flex " style="height: 40px; width:40px;">
+                    <button class="bg-dark text-white nav-link" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#manhinhnho" aria-controls="manhinhnho" aria-expanded="false"
+                        aria-label="Toggle navigation" onclick="toggleIcon_collapse(this)">
+                        <i class="bi bi-list" style="font-size: 25px;"></i>
+                    </button>
+                </div>
+
+                <div class="nav-item border-0 me-3 " style="height: 40px; width:40px;">
+                    <a class="nav-link p-0 m-0 " href="#"><img src="img/icon-cnn.png" alt="..." class="img-fluid"></a>
+                </div>
+
+            </div>
+
+            <div class="d-flex navbar-nav d-flex d-lg-none">
+                <div class="nav-phai-1  d-flex">
+                    <div class="nav-item d-sm-flex d-none"><a class="nav-link text-white me-3 me-lg-0" href="#"
+                            tabindex="-1" aria-disabled="true">Watch</a></div>
+                    <div class="nav-item d-sm-flex d-none"><a class="nav-link text-white me-3 me-lg-0" href="#"
+                            tabindex="-1" aria-disabled="true">Listen</a></div>
+                    <div class="nav-item d-sm-flex "><a class="nav-link text-white me-3 me-lg-0" href="#" tabindex="-1"
+                            aria-disabled="true">Live TV</a></div>
+                    <div class="nav-item d-sm-flex d-none">
                         <a class="nav-link text-white " href="#" tabindex="-1" aria-disabled="true">
                             <button type="button"
                                 class="nut-dn text-center border-1 border-white d-flex justify-content-center align-items-center">Sign
@@ -175,7 +195,7 @@
         <div class="mau-den">
             <!-- muc so luoc -->
             <section>
-                <div class="container pt-5">
+                <div class="container-fluid" style="padding: 48px 57px 0px;"">
 
                     <!-- thanh tim kiem  -->
                     <div class="row mb-4">
@@ -704,16 +724,16 @@
 
             <!-- thong tin lien lac -->
             <section>
-                <div class="container mt-4">
+                <div class="container-fluid" style="padding: 0px 57px;">
                     <div class="row">
 
-                        <div class="col-lg-12 p-0 mb-lg-4 mb-5">
+                        <div class="col-lg-12 p-0 mb-lg-5 mb-5 mt-lg-5">
 
                             <div class="d-flex flex-lg-row flex-column   justify-content-center align-items-center ">
 
                                 <div class="d-flex  nav-phai ">
 
-                                    <div class=" d-flex flex-lg-row flex-column nav-phai-2 border-lg-start me-3">
+                                    <div class=" d-flex flex-lg-row flex-column nav-phai-2 me-3">
                                         <div class="ms-lg-0 ms-3"><a
                                                 class="nav-link text-white d-flex justify-content-center align-items-center p-2"
                                                 href="#" tabindex="-1" aria-disabled="true"
@@ -754,9 +774,9 @@
     <!-- dong chu dau -->
     <section>
 
-        <div class="container pt-4">
+        <div class="container-fluid" style="padding: 32px 57px 0px;">
             <div class="row d-lg-flex d-none">
-                <div class="col-12  ">
+                <div class="col-12 p-0" style="height: 55px;">
                     <div class="d-flex flex-nowrap position-relative">
                         <div class="d-flex position-absolute" style="left: -4px; z-index:1;">
                             <button id="btn-texttop-left" style="box-shadow: 20px 0px 12px 8px white; border-radius: 50%;width: 30px; height: 30px; background: white;"><</button>
@@ -764,11 +784,10 @@
                         <div class="d-flex position-absolute" style="right: 0; z-index:1;">
                             <button id="btn-texttop-right" style="box-shadow: -20px 0px 12px 8px white;border-radius: 50%; width: 30px; height: 30px; background: white;">></button>
                         </div> 
-                        <div class="dong-chudau d-flex justify-content-center text-center link-group position-absolute" id="texttop-scroll" style="top:2px;left:0; z-index:0;">
+                        <div class="dong-chudau d-flex justify-content-center link-group position-absolute" id="texttop-scroll" style="top:2px;left:0; z-index:0;">
                             
                             <div class="link">
-                                <a href="#" class="dong-chu">Fistfight breaks out in
-                                    Turkish parliament</a>
+                                <a href="#" class="dong-chu">Fist fight breaks out in Turkish parliament</a>
                             </div>
                             <div class="link">
                                 <a href="#" class="dong-chu">Mammoth tusk discovered</a>
@@ -800,10 +819,10 @@
 
     <!-- tin tuc 1 -->
     <section>
-        <div class="tin1 container-sm mt-4">
+        <div class="tin1 container-fluid" style="padding: 0px 57px ; margin-bottom: 46px;">
             <!-- cot 1 -->
             <div class="row mb-4">
-                <div class="col-lg-6 g-3">
+                <div class="col-lg-6 ">
                     <a href="#" class="tin-tuc ">
                         <div class="card-box mb-4">
                             <div class="card-body text-center">
@@ -870,7 +889,7 @@
                     </ul>
 
                 </div>
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3 ">
                     <a href="#" class="tin-tuc ">
                         <div class="card-box mb-4">
                             <figure class="figure position-relative mb-0">
@@ -918,7 +937,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3 ">
                     <a href="#" class="tin-tuc ">
                         <div class="card-box mb-4">
                             <iframe width="100%" height="210"
@@ -1021,7 +1040,7 @@
 
             <!-- cot 2 -->
             <div class="row mb-4">
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1133,7 +1152,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-6 g-3">
+                <div class="col-lg-6">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1198,7 +1217,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3">
                     <a href="#" class="tin-tuc ">
                         <div class="tin-hinh-nho border-bottom border-1">
                             <div class="hinh-tin-nho position-relative ">
@@ -1276,7 +1295,7 @@
 
             <!-- cot 3 -->
             <div class="row mb-4">
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3">
                     <a href="#" class="tin-tuc ">
 
                         <div class="card-box border-bottom pb-4 mb-4">
@@ -1351,7 +1370,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-6 g-3">
+                <div class="col-lg-6">
                     <a href="#" class="tin-tuc ">
                         <div class="card-box border-bottom pb-4 mb-3">
                             <figure class="figure position-relative mb-0">
@@ -1407,7 +1426,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-3 g-3">
+                <div class="col-lg-3">
                     <a href="#" class="tin-tuc ">
 
                         <div class="card-box border-bottom pb-4 mb-4">
@@ -1493,7 +1512,7 @@
 
             <!-- cot 4 -->
             <div class="row mb-4 float-start">
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1568,7 +1587,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <a href="#" style="color:black">
                         <div class="muc-tin co-hu border-top border-1">
                             <div class="duong-vien mau-do"></div>
@@ -1632,12 +1651,12 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3"></div>
+                <div class="col-lg-4"></div>
             </div>
 
             <!-- cot 5 -->
             <div class="row mb-4 float-start">
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1712,7 +1731,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1799,7 +1818,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <a href="#" style="color:black">
                         <div class="muc-tin co-hu border-top border-1">
                             <div class="duong-vien mau-do"></div>
@@ -1880,7 +1899,7 @@
 
             <!-- cot 6 -->
             <div class="row mb-4 float-start">
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -1955,7 +1974,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -2030,7 +2049,7 @@
                     </a>
 
                 </div>
-                <div class="col-lg-4 g-3">
+                <div class="col-lg-4">
                     <div class="muc-tin border-top border-1">
                         <div class="duong-vien mau-do"></div>
                         <div class="tieude-muc">
@@ -2116,7 +2135,7 @@
             </div>
 
             <!-- cot 7 -->
-            <div class="row mb-4 d-none d-lg-flex">
+            <div class="row d-none d-lg-flex">
                 <div class="col-lg-10 ">
                     <div class="row">
                         <div class="col-lg-3">
@@ -2273,13 +2292,13 @@
             </div>
 
         </div>
-        </div>
+        
     </section>
 
     <!-- tin tuc 2 -->
     <section>
-        <div class=" mau-den p-5 border-bottom border-dark-subtle">
-            <div class="container-sm">
+        <div class=" mau-den border-bottom border-dark-subtle">
+            <div class="container-fluid" style="padding: 64px 57px;">
                 <!-- tieu de -->
                 <div class="row  mb-4">
                     <div class="col-lg-12 float-start " style="padding-left: 8px;">
@@ -2457,13 +2476,13 @@
     </section>
 
     <!-- footer -->
-    <footer class="mau-den">
+    <footer class="mau-den" id="footer-c">
         <!-- muc so luoc -->
         <section>
-            <div class="container pt-5">
+            <div class="container-fluid" style="padding: 48px 57px 0px;">
 
                 <!-- thanh tim kiem  -->
-                <div class="row mb-4">
+                <div class="row mb-2">
                     <div class="col-lg-12">
 
                         <form action="#" class="hop-tim-kiem d-flex">
@@ -2926,10 +2945,10 @@
 
         <!-- thong tin lien lac -->
         <section>
-            <div class="container mt-4">
+            <div class="container-fluid" style="padding: 0px 57px 24px;">
                 <div class="row">
 
-                    <div class="col-lg-12 p-0 mb-lg-4 mb-5">
+                    <div class="col-lg-12 p-0 mb-lg-4 mb-5 mt-4">
 
                         <div
                             class="d-flex flex-lg-row flex-column justify-content-lg-between  justify-content-center align-items-center ">

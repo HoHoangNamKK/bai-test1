@@ -17,6 +17,7 @@
 .link::after {
     content: '|';
     margin-left: 10px;
+    margin-right: 10px;
     color: gray;
 }
 
@@ -131,6 +132,7 @@
 @media (min-width: 992px) {
     .row-cols-lg-7 .col{
         width: 14.2857143%;
+        padding-left: 1px;
     }
 
     .border-lg-start{
@@ -148,6 +150,8 @@
 
     
 }
+
+
 
 @media (min-width: 576px) {
     .thunho-dn{
@@ -230,6 +234,11 @@
     text-decoration: underline;
     text-decoration-color: black;
     text-underline-offset: 3px;
+}
+
+.dong-chudau .link{
+    padding: 0;
+    font-size: 17px;
 }
 
 
@@ -422,6 +431,27 @@
 }
 
 
+.items-dropdown-nav{
+    top: 42px;
+    z-index: 1;
+    text-align: left;
+    opacity: 0;
+}
+
+.menu-dropdown-nav:hover .items-dropdown-nav{
+    top: 42px;
+    opacity: 1;
+}
+
+
+.items-dropdown-nav .nav-item{
+    border: 1px solid gray;
+}
+
+.menu-dropdown-nav:hover .fa-angle-down{
+    transform:rotate(180deg);
+    padding-right: 10px;
+}
 
 
 .mau-den .figure-caption{
