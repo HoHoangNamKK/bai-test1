@@ -22,11 +22,19 @@
 
 .link:last-child::after {
     content: '';
+    margin-left: 0;
     /* Bỏ dấu gạch đứng sau liên kết cuối cùng */
 }
 
 .thanh-dieu-huong .navbar-toggler::backdrop .navbar-toggler-icon{
     opacity: 0;    
+}
+
+@media (min-width: 1400px) {
+    #btn-texttop-left,
+    #btn-texttop-right {
+  display: none;
+}
 }
 
 
@@ -198,10 +206,19 @@
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    align-self: center;
-    justify-content: center;
-    overflow: auto;
+    overflow: scroll;
 }
+
+.dong-chudau::-webkit-scrollbar{
+    display: none;
+}
+
+
+#btn-texttop-left.hidden,
+#btn-texttop-right.hidden {
+  display: none;
+}
+
 
 .dong-chudau a {
     text-decoration: none;
@@ -493,4 +510,3 @@
 .nut-dn:hover{
     background: rgba(128, 128, 128, 80%);
 }
-
