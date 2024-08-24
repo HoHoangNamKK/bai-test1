@@ -1,7 +1,10 @@
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: cnn_sans_display, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans Display", 'Helvetica Neue', Helvetica, Arial, "roboto", sans-serif;
+
 }
 
 .link-group {
@@ -194,7 +197,7 @@
     border-radius: 6px;
 }
 
-.nav-custom .fa-magnifying-glass{
+.nav-custom .fa-magnifying-glass, .nav-custom {
     font-size: 15px;
 }
 
