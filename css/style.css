@@ -24,6 +24,7 @@
 .link:last-child::after {
     content: '';
     margin-left: 0;
+    margin-right: 0;
     /* Bỏ dấu gạch đứng sau liên kết cuối cùng */
 }
 
@@ -188,13 +189,13 @@
   .navbar-nav .nut-dn{
     background: black;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     border-radius: 6px;
 }
 
 .thanh-dieu-huong .fa-magnifying-glass{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
@@ -238,7 +239,7 @@
 
 .dong-chudau .link{
     padding: 0;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 
