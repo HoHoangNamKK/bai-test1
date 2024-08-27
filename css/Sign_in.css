@@ -1,0 +1,100 @@
+.Signin-container{
+    background: linear-gradient(#c0b9b9, #d7b9b9);
+}
+
+.Signin-to-Signup{
+    color: black;
+}
+
+.Signin-to-Signup:hover{
+    text-decoration: none;
+    color: gray;
+}
+
+.input-box label{
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.5s;
+    color: #262626;
+}
+
+.input-box .icon-eyes-hiden-pass{
+    background: white;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 28px;
+    color: #262626;
+    /* Tắt nền và viền */
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+
+    /* Tắt đổ bóng */
+    box-shadow: none;
+    &:hover,
+    &:focus,
+    &:active {
+        background: none;
+        box-shadow: none;
+    };
+    
+}
+
+.input-box .input-text
+{   
+    height: 50px;padding:12px;
+    border: 0.5px solid gray;
+    transition: 0.5s;
+}
+
+.input-box .input-text:focus,
+.input-box .input-text:valid 
+{   
+    height: 60px;
+    transition: 0.5s;
+}
+
+.input-box .input-text:focus~ label,
+.input-box .input-text:valid~ label
+{   
+    top:10px;
+    font-size: 10px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+
+
+.Signin-to-Fg{
+    color: #0c0c0c;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: gray;
+    };
+}
+
+.btn-submit-sign-in{
+    background: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    cursor: pointer;
+    &:hover{
+        background: gray;
+    };
+}
+
+.btn-signin-with3{
+    &:hover{
+        background: gray;
+    };
+}
