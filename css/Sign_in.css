@@ -98,3 +98,11 @@
         background: gray;
     };
 }
+
+.form-sign-in .invalid-tooltip{
+    padding: 1px;
+}
+
+.form-sign-in .invalid-tooltip input{
+    border: 0;
+}

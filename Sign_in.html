@@ -40,22 +40,23 @@
 
 
 
-                    <form action="#" class="mt-1">
+                    <form  action="#" class="mt-1">
                         <div id="input-email" style="margin-top: 12px;">
                             <div class="input-box d-flex flex-column mt-1d-flex position-relative" >
-                                <input type="text" class="w-100 rounded input-text" id="email-sign-in"  required >
+                                <input onfocus="resetinvalid(this)" onblur="Checkinvalid(this)" type="text" class="w-100 rounded input-text" id="email-sign-in"  required >
                                 <label for="email-sign-in" class="position-absolute">Email address</label>
                             </div>
-                            <Span class="mess-error"></Span>
+                            <Span class="mess-error d-none" style="font-size: 12px;line-height: 14px;color: #c00;">Email address is required</Span>
+                            
                         </div>
 
                         <div id="input-password" style="margin-top: 12px;">
-                            <div class="input-box d-flex flex-column mt-1 d-flex position-relative" >
-                                <input type="password" class="w-100 rounded input-text" id="pass-sign-in" required>
+                            <div class="input-box d-flex flex-column mt-1 d-flex position-relative " >
+                                <input onfocus="resetinvalid(this)" onblur="Checkinvalid(this)" type="password" class="w-100 rounded input-text" id="pass-sign-in" required>
                                 <label for="pass-sign-in" class="position-absolute">Password</label>
                                 <span onclick="hiddenPassword(this)" class="icon-eyes-hiden-pass position-absolute"><i class="bi bi-eye"></i></span>
                             </div>
-                            <Span class="mess-error"></Span>
+                            <Span class="mess-error d-none" style="font-size: 12px;line-height: 14px;color: #c00;">Please enter a password</Span>
                         </div>  
                         <a href="#" class="d-flex align-content-around Signin-to-Fg m-0 mt-2">Forgot password?</a>
                         <div class="input-box m-0 mt-3">
