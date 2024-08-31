@@ -1,6 +1,28 @@
+
 .Signin-container{
     background: linear-gradient(#c0b9b9, #d7b9b9);
+    height: 740px;
 }
+
+.col-sign-in{
+    padding:40px; 
+    width: 665px;
+}
+
+.form-sign-in{
+    padding:48px 100px; 
+    box-sizing: border-box;
+}
+
+
+@media (max-width : 960px) {
+    .Signin-container{
+        background: white;
+    }
+}
+
+
+
 
 .Signin-to-Signup{
     color: black;
@@ -99,10 +121,10 @@
     };
 }
 
-.form-sign-in .invalid-tooltip{
+form .invalid-tooltip{
     padding: 1px;
 }
 
-.form-sign-in .invalid-tooltip input{
+form .invalid-tooltip input{
     border: 0;
 }
