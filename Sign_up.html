@@ -30,13 +30,13 @@
 
 <body>
 
-    <div class="container-fluid Signin-container" style="height: 740px;">
+    <div class="container-fluid Signin-container" style="height: 799px;">
         <div class="row h-100 justify-content-center">
             <div class="h-100 justify-content-center col-sign-in" >
                 <div class="form-sign-in bg-white h-100 w-100 rounded d-flex flex-column">
                     <a href="index.html" style="height: 54px;" class="w-100 d-flex justify-content-center align-items-center"><img src="img/2024-08-27_183937.png" class="img-fluid"  alt="..."></a>
-                    <h1 class="d-flex justify-content-center m-0" style="height: 35px; font-size: 24px;font-weight: 700;line-height: 30px;">Sign in to your CNN account</h1>
-                    <span class="w-100 text-center m-0 mt-1" style=" font-size: 16px;color:#262626;">Don't have an account? <a href="./Sign_up.html" class="Signin-to-Signup"> Sign up</a></span>
+                    <h1 class="d-flex justify-content-center m-0 mt-2" style="height: 35px; font-size: 24px;font-weight: 700;line-height: 30px;">Sign up for your CNN account</h1>
+                    <span class="w-100 text-center m-0 mt-4" style=" font-size: 16px;color:#262626;">Already have an account? <a href="./Sign_in.html" class="Signin-to-Signup"> Sign in</a></span>
 
 
 
@@ -58,9 +58,20 @@
                             </div>
                             <Span class="mess-error d-none" style="font-size: 12px;line-height: 14px;color: #c00;">Please enter a password</Span>
                         </div>  
-                        <a href="#" class="d-flex align-content-around Signin-to-Fg m-0 mt-2">Forgot password?</a>
+                        <div class="mt-2">
+                            <span style="font-size: 12px;line-height: 18px;letter-spacing: .2px;">By creating an account, I agree to the <a href="#" class="Signin-to-Signup">Terms of Use</a>
+                                and have read our <a href="#" class="Signin-to-Signup">Privacy Policy</a>.</span>
+                        </div>
+                        <div id="input-checkb" class="mt-4 d-flex w-100">
+                            <div class="input-box mt-1 d-flex" >
+                                <div class="" style="width: 24px;height: 24px;">
+                                    <input type="checkbox" class="" id="Check_box" style="width: 20px;height: 20px;">
+                                </div>
+                                <span style="width: auto;height: 36px; font-size:12px;font-weight: 500; margin-left:16px; line-height: 18px;letter-spacing: .2px;">CNN and its <a href="#" class="Signin-to-Signup">affiliates</a> may use my email address to provide updates, ads, and offers. I can opt out via the <a href="#" class="Signin-to-Signup">Privacy Policy</a>.</span>
+                            </div>                        
+                        </div>  
                         <div class="input-box m-0 mt-3">
-                            <input type="submit" class="text-white w-100 border-0 rounded btn-submit-sign-in  " style="height: 48px;" value="Sign in">
+                            <input type="submit" class="text-white w-100 border-0 rounded btn-submit-sign-in  " style="height: 48px;" value="Sign up">
                         </div>
                     </form>
                     
@@ -68,10 +79,7 @@
                         <span class="d-flex justify-content-center align-content-center" style="width: 24px;font-size: 18px; color: #6e6e6e;background-color: white; z-index:3;">or</span>
                         <span class="position-absolute w-100  border-top border-2" style="top:55%; border-color:6e6e6e;"></span>
                     </div>
-                    <div>
-                        <span style="font-size: 12px;line-height: 18px;letter-spacing: .4px;">By creating an account or signing in, I agree to the <a href="#" class="Signin-to-Signup">Terms of Use</a>
-                            and have read our <a href="#" class="Signin-to-Signup">Privacy Policy</a>.</span>
-                    </div>
+                    
                     <div class="w-100 mt-3 btn-signin-with3">
                         <a href="#" class="rounded m-0 border-1 border-black btn  w-100 d-flex justify-content-center align-items-center" style="height: 58px;" >
                             <img src="./img/icon-google.png" class="img-fluid me-2" alt="...">

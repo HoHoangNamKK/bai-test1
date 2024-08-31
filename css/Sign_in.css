@@ -1,7 +1,7 @@
 
 .Signin-container{
     background: linear-gradient(#c0b9b9, #d7b9b9);
-    height: 740px;
+    
 }
 
 .col-sign-in{
@@ -127,4 +127,35 @@ form .invalid-tooltip{
 
 form .invalid-tooltip input{
     border: 0;
+}
+#Check_box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 2px;
+    -webkit-appearance: none; /* Loại bỏ giao diện mặc định trên WebKit */
+    -moz-appearance: none; /* Loại bỏ giao diện mặc định trên Firefox */
+    appearance: none; /* Loại bỏ giao diện mặc định */
+    background-color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+/* Khi checkbox được chọn */
+#Check_box:checked {
+    background-color: black;
+}
+
+/* Tạo dấu tick */
+#Check_box:checked:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
