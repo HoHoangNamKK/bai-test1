@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Noto Sans Display", 'Helvetica Neue', Helvetica, Arial, "roboto", sans-serif;
+}
+
+
+
+@media (max-width: 1024px) {
+    #Navbar-audio{
+        background:black;
+    }
+}
+
+#Navbar-audio{
+    background: none;
+}
+
+.Logo-cnn-audio{
+    height: 44px; width:235px;
+}
+
+.navbar-left{
+    background: black;
+    overflow-y: scroll;
+    width: 235px;
+    height: 100%;
+}
+
+.body-right{
+    background: blue;
+    width: calc(100% - 235px);
+    height: 100%;
+}
+
+
+.navbar-left .sel1{
+    height: 106px;
+    
+}
+
+.navbar-left .sel2{
+    height: 265px;
+    
+}
+
+.navbar-left .sel3{
+    height: 135px;
+    
+}
+
+.navbar-left .sel4{
+    height: 135px;
+    
+}
+
+
+
+.sel-title{
+    color: #fefefe;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.sel-text{
+    color:#8c8c8c;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 17.5px;
+    text-decoration: none;
+}
+.boreder-sel a{
+    text-decoration: none;
+    height: 30px;
+}
+
+.boreder-sel{
+    border-bottom:1px solid dimgray;
+    text-decoration: none;
+}
