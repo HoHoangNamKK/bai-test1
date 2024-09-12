@@ -36,7 +36,7 @@ html, body{
 
 .body-right{
     grid-area: right-body;
-    background-color: green;
+    background-color: white;
     overflow-y: auto;
 }
 
@@ -150,4 +150,115 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.body-right .shows {
+    margin: 36px 36px 0 36px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.body-right .header-title {
+    display: flex;
+    line-height: 40px;
+}
+
+
+.body-right h2 {
+    font-size: 28px;
+    font-weight: 300;
+    color: #0c0c0c;
+    margin: 0;
+    padding: 0;
+}
+
+.body-right h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #4d4d4d;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+}
+
+.body-right .tunein-powered {
+    color: #8c8c8c;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.body-right .tunein-logo {
+    background-image: url(/img/tunein-logo@3x.899057a2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 22px;
+    margin: 6px 0 0 5px;
+}
+
+.body-right .items{
+    list-style: none;
+    margin: 36px 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-right .item{
+    margin: 0 24px 24px 0;
+    max-width: 170px;
+    cursor: pointer;
+}
+
+.body-right .coverart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.body-right .background-img{
+    width: 170px;
+    height: 170px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgba(12, 12, 12, .08);
+}
+
+.playpausewrapper{
+    background-color: rgba(12, 12, 12, .5);
+    position: absolute;
+    border-radius: 100%;
+    border: 2px solid #fefefe;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    background-size: 20px 22px;
+    background-image: url(/img/pause.svg);
+    background-position: 16px center;
+    background-repeat: no-repeat;
+}
+
+.item:hover .coverart .playpausewrapper{
+    display: block;
+}
+
+.item .author{
+    width: 150px;
+    margin: 12px 0 0 0;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }

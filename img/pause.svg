@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="36" viewBox="0 0 29 36">
+  <defs>
+    <path id="audio-play-a" d="M39.164133,21.5055602 L16.6815519,6.51156021 C14.6822644,5.17806021 12,6.60681021 12,9.00531021 L12,38.9933102 C12,41.3910602 14.6822644,42.8198102 16.6815519,41.4870602 L39.164133,26.4923102 C40.945289,25.3043102 40.945289,22.6935602 39.164133,21.5055602"/>
+  </defs>
+  <use fill="#FFFFFF" fill-rule="evenodd" transform="translate(-12 -6)" xlink:href="#audio-play-a"/>
+</svg>
